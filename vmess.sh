@@ -2,7 +2,7 @@ ibmcloud target --cf && read -p "输入你的app名称：" appname&&path=$(ibmcl
   {path=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 16)
      "v": "2",
      "ps": "bigfang",
-     "add": "${appname}.us-south.cf.appdomain.cloud",
+     "add": "${appname}.eu-gb.cf.cloud.ibm.com",
      "port": "443",
      "id": "${id}",
      "aid": "4",
@@ -15,7 +15,7 @@ ibmcloud target --cf && read -p "输入你的app名称：" appname&&path=$(ibmcl
 EOF
 )
 
-echo address:${appname}.us-south.cf.appdomain.cloud
+echo address:${appname}.eu-gb.cf.cloud.ibm.com
 echo ID:${id}
 echo port:4433
 echo alterID:64
